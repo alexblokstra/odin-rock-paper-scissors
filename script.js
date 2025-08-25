@@ -58,7 +58,7 @@ function playGame() {
     };
 
     function getHumanChoice() {
-        let choice = prompt("Rock, paper or scissor?").toLowerCase();
+        let choice = prompt("Rock, paper or scissors?").toLowerCase();
         
         return choice
     };
