@@ -14,14 +14,13 @@ for (let button of choiceButtons) {
     });
 }
 
-if (roundsPlayed >= maxRounds) {
-    resetGame();
-}
-
 function playRound(humanChoice, computerChoice) {
+    if (roundsPlayed >= maxRounds) {
+        resetGame();
+    };
+
     let resultText = "";
-    console.log(humanChoice);
-    console.log(computerChoice);
+
     if (humanChoice.toLowerCase() === computerChoice.toLowerCase()) {
         resultText = "It's a draw!";
     } else if (
