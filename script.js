@@ -37,6 +37,7 @@ function playRound(humanChoice, computerChoice) {
     resultText += `<br>You: ${humanScore} | Computer: ${computerScore}`;
 
     roundsPlayed++;
+    resultText += `<br> <i> Round: ${roundsPlayed}</i>`;
 
     if (roundsPlayed === maxRounds) {
         if (humanScore > computerScore) {
